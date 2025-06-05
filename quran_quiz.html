@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مراجعة الآيات</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      direction: rtl;
+      padding: 20px;
+    }
+    .question {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .question button {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .answer {
+      display: none;
+      margin-top: 10px;
+      background: #e2f0d9;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>أسئلة مراجعة على الآيات</h2>
+
+  <div class="question">
+    <strong>ما الآية رقم 37 في سورة القمر؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">ولقد أنذرهم بطشتنا فتماروا بالنذر</div>
+  </div>
+
+  <div class="question">
+    <strong>ما الآية رقم 39 في سورة القمر؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">فذوقوا عذابي ونذر</div>
+  </div>
+
+  <div class="question">
+    <strong>ما الآية رقم 41 في سورة القمر؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">ولقد جاء آل فرعون النذر</div>
+  </div>
+
+  <div class="question">
+    <strong>ما الآية رقم 58 في سورة الرحمن؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">كأنهن الياقوت والمرجان</div>
+  </div>
+
+  <div class="question">
+    <strong>ما الآية رقم 31 في سورة الواقعة؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">وماءٍ مسكوب</div>
+  </div>
+
+  <div class="question">
+    <strong>ما الآية رقم 62 في سورة الواقعة؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">ولقد علمتم النشأة الأولى فلولا تذكرون</div>
+  </div>
+
+  <div class="question">
+    <strong>اذكر الآيات من 2 إلى 6 في سورة الحديد بالترتيب؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">
+      2: له ملك السماوات والأرض يحيي ويميت وهو على كل شيء قدير<br>
+      3: هو الأول والآخر والظاهر والباطن وهو بكل شيء عليم<br>
+      4: هو الذي خلق السماوات والأرض في ستة أيام ثم استوى على العرش...<br>
+      5: له ملك السماوات والأرض وإلى الله ترجع الأمور<br>
+      6: يولج الليل في النهار ويولج النهار في الليل وهو عليم بذات الصدور
+    </div>
+  </div>
+
+  <div class="question">
+    <strong>ما الآية رقم 18 في سورة الحديد؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">إن المصدقين والمصدقات وأقرضوا الله قرضًا حسنًا...</div>
+  </div>
+
+  <div class="question">
+    <strong>ما الآية رقم 27 في سورة الحديد؟</strong>
+    <button onclick="toggleAnswer(this)">إظهار الإجابة</button>
+    <div class="answer">ثم قفينا على آثارهم برسلنا وقفينا بعيسى ابن مريم وآتيناه الإنجيل...</div>
+  </div>
+
+  <script>
+    function toggleAnswer(button) {
+      const answer = button.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
